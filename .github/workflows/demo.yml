@@ -26,9 +26,9 @@ jobs:
       - name: Build website
         run: npm run build
       - name: uplaod artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name:
+          name: my-artifact
           path: |
             dist
   deploy:
